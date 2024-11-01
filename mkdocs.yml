@@ -1,11 +1,49 @@
-site_name: Sindri Magnússon
+site_name: Sima
 site_url: https://sindrimagg.github.io/
 theme:
   name: material
+  features: content.code.copy
+  language: is
+  favicon: images/favicon.ico
+  logo: images/bookmark.png
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Skipta í ljósa stillingu
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: custom
+      scheme: default 
+      toggle:
+        #icon: material/brightness-7
+        icon: material/weather-night
+        name: Skipta í dökka stillingu
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      scheme: slate
+      toggle:
+        #icon: material/brightness-4
+        icon: material/brightness-auto
+        name: Skipta í kerfisstillingu
+
 
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 extra_javascript:
   - javascripts/katex.js
@@ -14,3 +52,4 @@ extra_javascript:
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css

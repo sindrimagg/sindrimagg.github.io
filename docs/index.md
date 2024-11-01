@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# Hvað er þetta?
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Fannst vanta síðu sem talar um hugtök í tölvunarfræði og kannski stærðfræði á íslensku. Kannski væri betra að setja þetta á Wikipediu, ef til vill fer þetta einhvern tíma þangað en í millitíðinni þá fer þetta hingað (ef ég er duglegur). 
 
-## Commands
+## Um mig
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Ég er með BSc gráðu í stærðfræði og er að klára MSc í hagnýtri stærðfræði. Hef áhuga á öllu áhugaverðu, þar á meðal stærðfræði, tölvunarfræði og eðlisfræði.

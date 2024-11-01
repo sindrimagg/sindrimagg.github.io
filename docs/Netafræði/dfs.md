@@ -30,14 +30,14 @@ void dfs(int v) {
     stack<int> hladi;
     hladi.push(v);
 
-    while (!stack.empty()) {
-        int u = stack.top();
-        stack.pop();
+    while (!hladi.empty()) {
+        int u = hladi.top();
+        hladi.pop();
         
         if (!fundinn[u]) {
             fundinn[u] = true;
             for (int w : net[u]) {
-                if (!fundinn[w]) stack.push(w);
+                if (!fundinn[w]) hladi.push(w);
             }
         }
     }
