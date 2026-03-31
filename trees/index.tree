@@ -1,0 +1,6 @@
+\title{Sindri Magnússon}
+\author{sindri}
+
+\<html:img>[src]{\route-asset{assets/images/ascii_eg.png}}[style]{float:right}[height]{200}
+
+\transclude{contact}

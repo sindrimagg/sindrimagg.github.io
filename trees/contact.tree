@@ -1,0 +1,9 @@
+\title{Contact Information}
+
+\import{basic-macros}
+
+\table{
+  \tr{\td{\strong{Email}} \td{sim42 at \tt{hi.is}}}
+  \tr{\td{\strong{Github}} \td{[sindrimagg](https://github.com/sindrimagg/)}}
+  \tr{\td{\strong{Mastodon}} \td{[https://mathstodon.xyz/@sima](https://mathstodon.xyz/@sima)}}
+}
