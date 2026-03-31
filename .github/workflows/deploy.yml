@@ -31,6 +31,26 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      
+      - name: Set-up OCaml
+        uses: ocaml/setup-ocaml@v3
+        with:
+          ocaml-compiler: 5.3
+          
+      - name: Initialize opam
+        run: opam init
+          
+      - name: Install Forester
+        run: opam install forester.5.0
+
+      - name: Update environment variables
+        run: eval $(opam env)
+
+      - name: Forester version
+        run: opam exec -- forester --version
+
+      - name: Build site
+        run: opam exec -- forester build forest.toml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
