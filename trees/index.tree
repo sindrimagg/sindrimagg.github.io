@@ -1,11 +1,15 @@
 \title{Sindri Magnússon}
-
-\<html:img>[src]{\route-asset{assets/images/ascii_eg.png}}[style]{float:right}[height]{200}
+\meta{author}{false}
 
 \put\transclude/numbered{false}
 
-\transclude{contact}
+\<html:div>[class]{contact-container}{
+  \<html:div>[class]{contact-content}{
+    \transclude{contact}
 
-\transclude{sindri}
+      \transclude{sindri}
+  }
+  \<html:img>[src]{\route-asset{assets/images/ascii_eg.png}}[class]{image-me}
+}
 
 \transclude{0001}
