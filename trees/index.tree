@@ -1,13 +1,41 @@
 \title{Sindri Magnússon}
 \meta{author}{false}
 
+\<html:head>{
+  \<html:style>{
+    .image-me {
+      max-width: 30\%;
+      align-self: center;
+      margin-bottom: 1em;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column-reverse;
+      transition: ease all .2s;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+      transition: ease all .2s;
+    }
+
+    @media only screen and (min-width: 500px) {
+      .contact-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
 \put\transclude/numbered{false}
 
 \<html:div>[class]{contact-container}{
   \<html:div>[class]{contact-content}{
     \transclude{contact}
-
-      \transclude{sindri}
+    \transclude{sindri}
   }
   \<html:img>[src]{\route-asset{assets/images/ascii_eg.png}}[class]{image-me}
 }
